@@ -1,6 +1,6 @@
 'use strict';
 if (process.env.NODE_ENV === 'production') {
-    let redisURI = require('uri').parse(process.env.REDIS_URL);
+    let redisURI = require('url').parse(process.env.REDIS_URL);
     let redisPassword = redisURI.auth.split(':')[1];
     module.exports = {
     	host: process.env.host || "",
