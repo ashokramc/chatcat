@@ -1,5 +1,6 @@
 'use strict';
 const session = require('express-session');
+const mongoose = require('mongoose');
 const Mongostore = require('connect-mongo')(session);
 
 const config = require('../config');
@@ -10,7 +11,7 @@ if (process.env.NODE_ENV === 'production') {
         resave : false,
         saveUninitialized: false,
         store: new Mongostore({
-        	mongooseConnection:db.Mongoose.connection
+        	mongooseConnection:mongoose.connection
         })
     });
 } else {
