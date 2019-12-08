@@ -1,0 +1,2 @@
+{"level":"error","message":"MongoDb Initial Error Error: querySrv ENOTFOUND _mongodb._tcp.cluster0-apoip.mongodb.ne","timestamp":"2019-12-07T23:00:43.610Z"}
+{"level":"error","message":"MongoDb Error Error: querySrv ENOTFOUND _mongodb._tcp.cluster0-apoip.mongodb.ne","timestamp":"2019-12-07T23:00:43.612Z"}
