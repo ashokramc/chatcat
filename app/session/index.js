@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === 'production') {
         secret : config.sessionSecret,
         resave : false,
         saveUninitialized: false,
-        store: new MongoStore({
+        store: new Mongostore({
         	mongooseConnection:db.Mongoose.connection
         })
     });
