@@ -9,9 +9,8 @@ if (process.env.NODE_ENV === 'production') {
     	"fb": {
 		"clientID":process.env.fbclientID,
 		"clientSecret": process.env.fbClientSecret,
-		"callbackURL" : process.env.host + "/auth/facebook/callback",
+		"callbackURL" : host + "/auth/facebook/callback",
 		"profileFields":["id", "displayName", "photos"],
-        "proxy" : true
 	    },
         "redis" : {
             host : redisURI.hostname,
