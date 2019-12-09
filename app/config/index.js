@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === 'production') {
     	"fb": {
 		"clientID":process.env.fbclientID,
 		"clientSecret": process.env.fbClientSecret,
-		"callbackURL" : host + "/auth/facebook/callback",
+		"callbackURL" : process.env.host + "/auth/facebook/callback",
 		"profileFields":["id", "displayName", "photos"],
 	    },
         "redis" : {
