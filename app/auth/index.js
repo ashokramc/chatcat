@@ -16,7 +16,7 @@ module.exports = () => {
 		    .catch (error => logger.log('error', 'Error while deserializing the user' + error));
 	});
 	let authProcessor = (accessToken, refreshToken, profile, done) => {
-
+        logger.log('info', 'AUTH PROCESSOR');
         h.findOne(profile.id)
             .then ((result) => {
              	if (result) {
